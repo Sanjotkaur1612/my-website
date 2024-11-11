@@ -1,0 +1,134 @@
+/* Reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body styling*/
+body {
+    font-family: Arial, sans-serif;
+    color: white; /* Darker color for readability */
+    background-image: url('img/backgroundblack.avif');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header styling */ 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px   ;
+    background-color: darkblue; /* Slight transparency for sky blue */
+    box-shadow: white; /* Subtle shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+.logo img {
+    width: 180px; /* Logo size */
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Shadow for logo */
+}
+
+/* Navigation styling */
+nav {
+    background-color: transparent;
+    border: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white; /* Dark blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #ff69b4; /* Highlight on hover */
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/*product*/
+.product-listing {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-listing h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background-color: darkblue;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {   
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: rgb(143, 144, 243);
+}

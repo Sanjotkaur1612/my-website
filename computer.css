@@ -1,0 +1,127 @@
+/* Reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body styling*/
+body {
+    font-family: Arial, sans-serif;
+    color: white; /* Darker color for readability */
+    background-image: url('img/backgroundblack.avif');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px   ;
+    background-color: darkblue; /* Slight transparency for sky blue */
+    box-shadow: white; /* Subtle shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px;
+}
+
+.logo img {
+    width: 180px; /* Logo size */
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Shadow for logo */
+}
+
+/* Center header title styling */
+center h1 {
+    font-size: 2em;
+    color: rgb(11, 196, 51); /* Darker blue for contrast */
+    text-shadow:
+        2px 2px 4px white,
+        3px 3px 6px white;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+/* Navigation styling */
+nav {
+    background-color: transparent;
+    border: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white; /* Dark blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: black; /* Highlight on hover */
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+main img {
+    display: block; 
+    margin: 20px auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: darkblue;
+    border-radius: 30px;
+    overflow: hidden;   
+    width: 20%;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 0;
+
+}
